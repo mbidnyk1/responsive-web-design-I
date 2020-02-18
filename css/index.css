@@ -67,28 +67,28 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    margin: 0 8%;
+    margin: 0 5%;
+}
+
+.navpluslogo {
+    display:flex;
+    justify-content: space-between;
 }
 
 nav {
-    display:flex;
-    justify-content: space-between;
-
-        
+    width:100%;
+    padding-top: 3%;       
 }
 
 nav a {
+    padding-right: 10%;
 	text-decoration: none;
-    color: gray;
-
-    padding: 4%;
+    color: gray;   
 }
 
 .logo{
-    margin-top: 4vh;
-  
+    padding-top: 2%; 
 }
-
 
 header {
 	display:flex;
@@ -106,97 +106,134 @@ header {
 }
 
 header h2 {
-	font-size:80px;	
+    font-size:80px;
+    padding-bottom: 2%;	
 }
 
-.button {
-	border: 1px solid black;
+button {
+    border: 1px solid black;
+    padding: 2% 12%;
+    font-size: 16px;
+    background-color: white;
 }
 
 .circle {
     padding: 8% 5%;
-    
-
-}
-
-.middle {
-
-}
-
-hr {
-	color:black;
 }
 
 .section1 {
-	display:flex;
-}
-
-.features {
-
+    display:flex;
+    padding: 4% 0;   
 }
 
 h1 {
 	font-size: 50px;	
 }
 
-p {
-
-}
-
 h3 {
-	font-size: 15px;
-}
-
-.about {
-
+	font-size: 18px;
 }
 
 .across img {
 	width: 100%;
-	margin: 4% 0%;
-
-	
-
 }
 
 .section2 {
-	display:flex;
-
+    display:flex;
+    padding: 4% 0;
+    border-bottom: 2px solid black;
+}
+.features {
+    padding-right:2%;
 }
 
 .services {
-
+padding-right:2%;
 }
 
 .product {
-
-}
-.vision {
-
+    padding-right:2%;
 }
 
 .contact {
-	display:flex;
-	flex-direction:column;
 	padding: 4% 0%
-
-}
-
-.contact h3 {
-
 }
 
 .contact p {
-	padding: .5% 0%
+    width:20%;
+    padding: 1% 0;
 }
 
 footer{
 	display:flex;
-	justify-content: center;
+    justify-content: center;
+    padding-bottom: 2%;
 }
 
-.options {
-	display:flex;
-	flex-direction:column;
-	
+@media(max-width: 800px){
+    /* .container {
+        margin: 0 3%;
+    } */
+
+    .navpluslogo {
+        display:flex;
+        flex-direction: column-reverse;
+    }
+
+    .logo{
+        display:flex;
+        justify-content: center;
+    }
+    nav {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .circle  {
+        display: none;
+    }
+}
+
+@media(max-width: 500px){
+    nav {
+        display:flex;
+        flex-direction:column;
+        border-bottom: 1px solid grey;
+        
+    }
+    nav a {
+        border-top: 1px solid grey;
+        
+        width:100%;
+        display:flex;
+        justify-content: center;
+        padding: 3% 0;
+    }
+    .section1 {
+        display:flex;
+        flex-direction: column; 
+    }
+
+    .section2 {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .services{
+        padding-bottom: 5%;
+    }
+
+    .features{
+        padding-bottom: 5%;
+    }
+
+    .product{
+        padding-bottom: 5%;
+    }
+
+    .vision{
+        padding-bottom: 5%;
+    }
+
+
 }
